@@ -8,10 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BrowserSwitchDelegate.h"
+
+
+void callbackPowerSource(void *context)
+{
+    NSLog(@"Power source change!");
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        BrowserSwitchDelegate *bsDelegate = [[BrowserSwitchDelegate alloc] init];
+        
+        [bsDelegate performSelectorInBackground:@selector(run) withObject:nil];
+        
+        [[NSRunLoop mainRunLoop] run];
     }
     return 0;
 }

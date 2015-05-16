@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37C4C7BA1B0678C300617ADC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C4C7B91B0678C300617ADC /* main.m */; };
+		37C4C7C11B07078800617ADC /* BrowserSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C4C7C01B07078800617ADC /* BrowserSwitchDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37C4C7B61B0678C300617ADC /* BrowserSwitch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrowserSwitch; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C4C7B61B0678C300617ADC /* BrowserSwitch */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; name = BrowserSwitch; path = brosd; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C4C7B91B0678C300617ADC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37C4C7C01B07078800617ADC /* BrowserSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserSwitchDelegate.m; sourceTree = "<group>"; };
+		37C4C7C21B07079D00617ADC /* BrowserSwitchDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserSwitchDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,7 @@
 		37C4C7AD1B0678C300617ADC = {
 			isa = PBXGroup;
 			children = (
-				37C4C7B81B0678C300617ADC /* BrowserSwitch */,
+				37C4C7B81B0678C300617ADC /* brosd */,
 				37C4C7B71B0678C300617ADC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,20 +57,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37C4C7B81B0678C300617ADC /* BrowserSwitch */ = {
+		37C4C7B81B0678C300617ADC /* brosd */ = {
 			isa = PBXGroup;
 			children = (
+				37C4C7C01B07078800617ADC /* BrowserSwitchDelegate.m */,
+				37C4C7C21B07079D00617ADC /* BrowserSwitchDelegate.h */,
 				37C4C7B91B0678C300617ADC /* main.m */,
 			);
+			name = brosd;
 			path = BrowserSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37C4C7B51B0678C300617ADC /* BrowserSwitch */ = {
+		37C4C7B51B0678C300617ADC /* brosd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C4C7BD1B0678C300617ADC /* Build configuration list for PBXNativeTarget "BrowserSwitch" */;
+			buildConfigurationList = 37C4C7BD1B0678C300617ADC /* Build configuration list for PBXNativeTarget "brosd" */;
 			buildPhases = (
 				37C4C7B21B0678C300617ADC /* Sources */,
 				37C4C7B31B0678C300617ADC /* Frameworks */,
@@ -77,7 +83,7 @@
 			);
 			dependencies = (
 			);
-			name = BrowserSwitch;
+			name = brosd;
 			productName = BrowserSwitch;
 			productReference = 37C4C7B61B0678C300617ADC /* BrowserSwitch */;
 			productType = "com.apple.product-type.tool";
@@ -108,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37C4C7B51B0678C300617ADC /* BrowserSwitch */,
+				37C4C7B51B0678C300617ADC /* brosd */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C4C7BA1B0678C300617ADC /* main.m in Sources */,
+				37C4C7C11B07078800617ADC /* BrowserSwitchDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +167,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -196,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -228,13 +235,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C4C7BD1B0678C300617ADC /* Build configuration list for PBXNativeTarget "BrowserSwitch" */ = {
+		37C4C7BD1B0678C300617ADC /* Build configuration list for PBXNativeTarget "brosd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C4C7BE1B0678C300617ADC /* Debug */,
 				37C4C7BF1B0678C300617ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
